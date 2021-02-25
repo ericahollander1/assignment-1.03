@@ -1779,8 +1779,8 @@ int main(int argc, char *argv[])
   d.pc[dim_x] = d.pc[dim_y] = 0; /* Suppress false positive from Valgrind */
 
   if (do_load) {
-   // read_dungeon(&d, load_file);//CHANGE THIS BACK!!!!!!!
-      read_dungeon(&d, "adventure.rlg327");
+   read_dungeon(&d, load_file);//CHANGE THIS BACK!!!!!!!
+      //read_dungeon(&d, "adventure.rlg327");
   } else if (do_image) {
     read_pgm(&d, pgm_file);
   } else {
